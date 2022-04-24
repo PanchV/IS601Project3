@@ -15,7 +15,7 @@ from app.db import db
 from app.auth import auth
 from app.cli import create_database
 
-
+#OOO
 login_manager = flask_login.LoginManager()
 
 
