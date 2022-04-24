@@ -18,4 +18,15 @@ def create_log_folder():
 @click.command(name='create-db')
 @with_appcontext
 def create_database():
-    db.create_all()
+    @click.command(name='create-db')
+    @with_appcontext
+    def create_database():
+        """ create database directory """
+        # get root directory of project
+        root = os.path.dirname(os.path.abspath(__file__))
+        # set the name of the apps log folder to logs
+        dbdir = os.path.join(root, '../../database')
+        # make a directory if it doesn't exist
+        if not os.path.exists(dbdir):
+            os.mkdir(dbdir)
+        db.create_all()
