@@ -57,4 +57,4 @@ jobs:
           heroku_api_key: ${{secrets.HEROKU_API_KEY}}
           heroku_app_name: "pv243-project3-prod" #Must be unique in Heroku
           heroku_email: "pvangapandu.fa17@gmail.com"
-          usedocker: true
+          usedocker: true #true
