@@ -15,7 +15,7 @@ from app.exceptions import http_exceptions
 from app.db.models import User
 from app.db import db
 from app.auth import auth
-from app.cli import create_database
+from app.cli import create_database, create_log_folder
 
 login_manager = flask_login.LoginManager()
 
