@@ -47,6 +47,6 @@ zipp==3.8.0
 rfc3339
 Faker
 python-dotenv
-sqlalchemy-serializer
+sqlalchemy_serializer
 rfc3339
 Flask-CORS
