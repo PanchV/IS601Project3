@@ -59,3 +59,25 @@
 2022-04-25 18:03:25,444 [INFO] app: After Request
 2022-04-25 18:03:25,899 [INFO] app: Before Request
 2022-04-25 18:03:25,927 [INFO] app: After Request
+2022-04-25 19:59:13,293 [INFO] flask_wtf.csrf: The CSRF token has expired.
+2022-04-25 19:59:13,296 [INFO] app: After Request
+2022-04-25 19:59:17,723 [INFO] app: Before Request
+2022-04-25 19:59:17,841 [INFO] app: After Request
+2022-04-25 19:59:21,426 [INFO] app: Before Request
+2022-04-25 19:59:21,441 [INFO] app: After Request
+2022-04-25 20:00:43,829 [INFO] app: Before Request
+2022-04-25 20:00:44,006 [INFO] app: After Request
+2022-04-25 20:00:44,025 [INFO] app: Before Request
+2022-04-25 20:00:44,037 [INFO] app: After Request
+2022-04-25 20:00:49,080 [INFO] app: Before Request
+2022-04-25 20:00:49,230 [INFO] app: After Request
+2022-04-25 20:00:49,245 [INFO] app: Before Request
+2022-04-25 20:00:49,264 [INFO] app: After Request
+2022-04-25 20:00:50,872 [INFO] app: Before Request
+2022-04-25 20:00:50,917 [INFO] app: After Request
+2022-04-25 20:00:51,868 [INFO] app: Before Request
+2022-04-25 20:00:51,918 [INFO] app: After Request
+2022-04-25 20:00:56,303 [INFO] app: Before Request
+2022-04-25 20:00:56,347 [INFO] app: After Request
+2022-04-25 20:00:58,138 [INFO] app: Before Request
+2022-04-25 20:00:58,182 [INFO] app: After Request
