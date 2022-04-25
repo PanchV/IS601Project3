@@ -1,0 +1,8 @@
+2022-04-25 18:03:16,565 [INFO] werkzeug: 172.23.0.1 - - [25/Apr/2022 18:03:16] "GET / HTTP/1.1" 200 -
+2022-04-25 18:03:20,445 [INFO] werkzeug: 172.23.0.1 - - [25/Apr/2022 18:03:20] "GET / HTTP/1.1" 200 -
+2022-04-25 18:03:20,669 [INFO] werkzeug: 172.23.0.1 - - [25/Apr/2022 18:03:20] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2022-04-25 18:03:23,975 [INFO] werkzeug: 172.23.0.1 - - [25/Apr/2022 18:03:23] "GET /about HTTP/1.1" 200 -
+2022-04-25 18:03:24,759 [INFO] werkzeug: 172.23.0.1 - - [25/Apr/2022 18:03:24] "GET /welcome HTTP/1.1" 200 -
+2022-04-25 18:03:25,461 [INFO] werkzeug: 172.23.0.1 - - [25/Apr/2022 18:03:25] "GET /about HTTP/1.1" 200 -
+2022-04-25 18:03:25,936 [INFO] werkzeug: 172.23.0.1 - - [25/Apr/2022 18:03:25] "GET / HTTP/1.1" 200 -
+2022-04-25 18:06:36,754 [INFO] werkzeug:  * Detected change in '/home/myuser/app/auth/__init__.py', reloading
