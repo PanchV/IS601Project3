@@ -1,21 +1,21 @@
 """A simple flask web app"""
-import flask_login
 import logging
+import os
 from logging.handlers import RotatingFileHandler
+
+import flask_login
 from flask import Flask, render_template
 from flask_bootstrap import Bootstrap5
 from flask_wtf.csrf import CSRFProtect
 
-import os
-from flask import Flask
-from app.context_processors import utility_text_processors
-from app.simple_pages import simple_pages
-from app.auth import auth
-from app.exceptions import http_exceptions
-from app.db.models import User
-from app.db import db
 from app.auth import auth
 from app.cli import create_database, create_log_folder
+from app.context_processors import utility_text_processors
+from app.db import db
+from app.db.models import User
+from app.error_handlers import error_handlers
+from app.logging_config import log_con
+from app.simple_pages import simple_pages
 
 login_manager = flask_login.LoginManager()
 
