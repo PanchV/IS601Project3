@@ -1,7 +1,8 @@
 """This makes the test configuration setup"""
 # pylint: disable=redefined-outer-name
-
+import os
 import pytest
+from app.db import db, User
 from app import create_app
 
 
