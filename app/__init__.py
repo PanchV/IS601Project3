@@ -23,8 +23,8 @@ from flask_cors import CORS
 login_manager = flask_login.LoginManager()
 
 
-def page_not_found(e):
-    return render_template("404.html"), 404
+# def page_not_found(e):
+#     return render_template("404.html"), 404
 
 
 def create_app():
