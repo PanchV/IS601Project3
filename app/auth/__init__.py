@@ -10,7 +10,7 @@ from app.db import db
 from app.db.models import User
 
 auth = Blueprint('auth', __name__, template_folder='templates')
-#from flask import current_app
+from flask import current_app
 
 
 @auth.route('/login', methods=['POST', 'GET'])

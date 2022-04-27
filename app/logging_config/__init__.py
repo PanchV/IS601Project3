@@ -62,7 +62,7 @@ LOGGING_CONFIG = {
             'format': '[%(asctime)s] %(levelname)s METHOD: %(request_method)s '
                       'FILENAME:%(filename)s FUNCTION NAME:%(funcName)s() LINE:%(lineno)s] '
                       '%(message)s from %(remote_addr)s'
-        }
+        },
 
         'RequestFormatter': {
             '()': 'app.logging_config.log_formatters.RequestFormatter',
