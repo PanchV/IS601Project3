@@ -10,7 +10,7 @@ from app.db import db
 from app.db.models import User
 
 auth = Blueprint('auth', __name__, template_folder='templates')
-from flask import current_app
+#from flask import current_app
 
 
 @auth.route('/login', methods=['POST', 'GET'])
@@ -29,8 +29,12 @@ def login():
             db.session.commit()
             login_user(user)
             flash("Welcome", 'success')
+            current_app.logger.info("Existing User" + user.email + "Logged In")
             return redirect(url_for('auth.dashboard'))
     return render_template('login.html', form=form)
+
+
+
 
 
 @auth.route('/register', methods=['POST', 'GET'])
@@ -49,6 +53,7 @@ def register():
                 db.session.add(user)
                 db.session.commit()
             flash('Congratulations, you are now a registered user!', "success")
+            current_app.logger.info("New User" + user.email + "registered")
             return redirect(url_for('auth.login'), 302)
         else:
             flash('Already Registered')
@@ -71,6 +76,7 @@ def logout():
     db.session.add(user)
     db.session.commit()
     logout_user()
+    flash("You are now logged out", 'success')
     return redirect(url_for('auth.login'))
 
 
@@ -78,14 +84,15 @@ def logout():
 @login_required
 @admin_required
 def browse_users():
-    current_app.logger.info('Info level log')
-    current_app.logger.warning('Warning level log')
+    #current_app.logger.info('Info level log')
+    #current_app.logger.warning('Warning level log')
     data = User.query.all()
     titles = [('email', 'Email'), ('registered_on', 'Registered On')]
     retrieve_url = ('auth.retrieve_user', [('user_id', ':id')])
     edit_url = ('auth.edit_user', [('user_id', ':id')])
     add_url = url_for('auth.add_user')
     delete_url = ('auth.delete_user', [('user_id', ':id')])
+    current_app.logger.info("Page loading")
     return render_template('browse.html', titles=titles, add_url=add_url, edit_url=edit_url, delete_url=delete_url,
                            retrieve_url=retrieve_url, data=data, User=User, record_type="Users")
 
@@ -108,6 +115,7 @@ def edit_user(user_id):
         db.session.add(user)
         db.session.commit()
         flash('User Edited Successfully', 'success')
+        current_app.logger.info("user edit made")
         return redirect(url_for('auth.browse_users'))
     return render_template('user_edit.html', form=form)
 
@@ -152,6 +160,7 @@ def edit_profile():
         db.session.add(current_user)
         db.session.commit()
         flash('You Successfully Updated your Profile', 'success')
+        current_app.logger.info(user.email + " updated their profile")
         return redirect(url_for('auth.dashboard'))
     return render_template('profile_edit.html', form=form)
 
@@ -166,6 +175,7 @@ def edit_account():
         db.session.add(current_user)
         db.session.commit()
         flash('You Successfully Updated your Password or Email', 'success')
+        current_app.logger.info(user.email + " updated their login info")
         return redirect(url_for('auth.dashboard'))
     return render_template('manage_account.html', form=form)
 
