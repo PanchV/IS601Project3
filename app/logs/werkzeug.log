@@ -247,3 +247,9 @@
 2022-04-28 18:13:49,990 [INFO] werkzeug: 172.23.0.1 - - [28/Apr/2022 18:13:49] "GET /login HTTP/1.1" 200 -
 2022-04-28 18:13:50,621 [INFO] werkzeug: 172.23.0.1 - - [28/Apr/2022 18:13:50] "GET /register HTTP/1.1" 200 -
 2022-04-28 18:28:06,840 [INFO] werkzeug:  * Detected change in '/home/myuser/tests/auth_test.py', reloading
+2022-04-28 19:00:34,484 [INFO] werkzeug: 172.23.0.1 - - [28/Apr/2022 19:00:34] "GET /register HTTP/1.1" 200 -
+2022-04-28 19:00:35,180 [INFO] werkzeug: 172.23.0.1 - - [28/Apr/2022 19:00:35] "GET /login HTTP/1.1" 200 -
+2022-04-28 19:00:36,975 [INFO] werkzeug: 172.23.0.1 - - [28/Apr/2022 19:00:36] "[32mPOST /login HTTP/1.1[0m" 302 -
+2022-04-28 19:00:36,997 [INFO] werkzeug: 172.23.0.1 - - [28/Apr/2022 19:00:36] "GET /dashboard HTTP/1.1" 200 -
+2022-04-28 19:00:39,327 [INFO] werkzeug: 172.23.0.1 - - [28/Apr/2022 19:00:39] "GET /songs HTTP/1.1" 200 -
+2022-04-28 19:07:23,925 [INFO] werkzeug:  * Detected change in '/home/myuser/tests/click_test.py', reloading
