@@ -6,6 +6,15 @@
             <h1>Managing Your Music, Made Easy!</h1>
             <br>
             Please log in to begin.
+            <br><br>
+
+                <div class="col col-3">
+
+                    <img src="{{ url_for('static', filename='images/musiclogin.jpeg') }}" width="800" height="auto"
+                         class="img"
+                         alt="...">
+                </div>
+
         </article>
         {% if current_user.is_authenticated == false %}
             <aside class="col-4">

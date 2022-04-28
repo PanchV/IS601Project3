@@ -191,3 +191,12 @@
 2022-04-28 00:09:11,197 [INFO] werkzeug: 172.23.0.1 - - [28/Apr/2022 00:09:11] "GET / HTTP/1.1" 200 -
 2022-04-28 00:09:24,509 [INFO] werkzeug: 172.23.0.1 - - [28/Apr/2022 00:09:24] "GET /about HTTP/1.1" 200 -
 2022-04-28 00:09:24,556 [INFO] werkzeug: 172.23.0.1 - - [28/Apr/2022 00:09:24] "[36mGET /static/images/musicbanner.jpeg HTTP/1.1[0m" 304 -
+2022-04-28 00:15:52,064 [INFO] werkzeug: 172.23.0.1 - - [28/Apr/2022 00:15:52] "GET / HTTP/1.1" 200 -
+2022-04-28 00:16:39,070 [INFO] werkzeug: 172.23.0.1 - - [28/Apr/2022 00:16:39] "GET / HTTP/1.1" 200 -
+2022-04-28 00:16:39,117 [INFO] werkzeug: 172.23.0.1 - - [28/Apr/2022 00:16:39] "[36mGET /static/images/musicdatabase.jpeg HTTP/1.1[0m" 304 -
+2022-04-28 00:16:52,351 [INFO] werkzeug: 172.23.0.1 - - [28/Apr/2022 00:16:52] "GET / HTTP/1.1" 200 -
+2022-04-28 00:16:52,405 [INFO] werkzeug: 172.23.0.1 - - [28/Apr/2022 00:16:52] "[36mGET /static/images/musicdatabase.jpeg HTTP/1.1[0m" 304 -
+2022-04-28 00:17:00,643 [INFO] werkzeug: 172.23.0.1 - - [28/Apr/2022 00:17:00] "GET / HTTP/1.1" 200 -
+2022-04-28 00:17:00,689 [INFO] werkzeug: 172.23.0.1 - - [28/Apr/2022 00:17:00] "[36mGET /static/images/musicdatabase.jpeg HTTP/1.1[0m" 304 -
+2022-04-28 00:19:30,786 [INFO] werkzeug: 172.23.0.1 - - [28/Apr/2022 00:19:30] "GET / HTTP/1.1" 200 -
+2022-04-28 00:19:30,863 [INFO] werkzeug: 172.23.0.1 - - [28/Apr/2022 00:19:30] "GET /static/images/musiclogin.jpeg HTTP/1.1" 200 -
