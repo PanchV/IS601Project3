@@ -241,3 +241,9 @@
 2022-04-28 17:42:52,616 [INFO] werkzeug: 172.23.0.1 - - [28/Apr/2022 17:42:52] "[36mGET /static/images/musicbanner.jpeg HTTP/1.1[0m" 304 -
 2022-04-28 17:42:53,390 [INFO] werkzeug: 172.23.0.1 - - [28/Apr/2022 17:42:53] "GET /dashboard HTTP/1.1" 200 -
 2022-04-28 17:48:50,974 [INFO] werkzeug:  * Detected change in '/home/myuser/tests/log_test.py', reloading
+2022-04-28 18:13:45,605 [INFO] werkzeug: 172.23.0.1 - - [28/Apr/2022 18:13:45] "[32mGET /logout HTTP/1.1[0m" 302 -
+2022-04-28 18:13:45,679 [INFO] werkzeug: 172.23.0.1 - - [28/Apr/2022 18:13:45] "GET /login HTTP/1.1" 200 -
+2022-04-28 18:13:48,557 [INFO] werkzeug: 172.23.0.1 - - [28/Apr/2022 18:13:48] "GET /register HTTP/1.1" 200 -
+2022-04-28 18:13:49,990 [INFO] werkzeug: 172.23.0.1 - - [28/Apr/2022 18:13:49] "GET /login HTTP/1.1" 200 -
+2022-04-28 18:13:50,621 [INFO] werkzeug: 172.23.0.1 - - [28/Apr/2022 18:13:50] "GET /register HTTP/1.1" 200 -
+2022-04-28 18:28:06,840 [INFO] werkzeug:  * Detected change in '/home/myuser/tests/auth_test.py', reloading

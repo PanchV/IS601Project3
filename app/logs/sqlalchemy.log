@@ -940,3 +940,11 @@ FROM users
 WHERE users.id = ?
 2022-04-28 17:42:53,370 [INFO] sqlalchemy.engine.Engine: [cached since 3.37e+04s ago] (1,)
 2022-04-28 17:42:53,385 [INFO] sqlalchemy.engine.Engine: ROLLBACK
+2022-04-28 18:13:45,563 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-04-28 18:13:45,566 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-04-28 18:13:45,568 [INFO] sqlalchemy.engine.Engine: [generated in 0.00159s] (1,)
+2022-04-28 18:13:45,574 [INFO] sqlalchemy.engine.Engine: UPDATE users SET authenticated=? WHERE users.id = ?
+2022-04-28 18:13:45,576 [INFO] sqlalchemy.engine.Engine: [generated in 0.00161s] (0, 1)
+2022-04-28 18:13:45,589 [INFO] sqlalchemy.engine.Engine: COMMIT
