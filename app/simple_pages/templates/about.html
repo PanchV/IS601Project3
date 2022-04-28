@@ -1,6 +1,20 @@
 {% extends "base.html" %}
 <article>{% block content %}
     <h1>About</h1>
-    This project will demonstrate more of my Object-Oriented Programming skills!
+
+    <div class="container">
+    This project will demonstrate more of my Object-Oriented Programming skills! In this project, the user is able to
+    log in, maintain a profile, upload a CSV file of their songs playlist, and then have it displayed on the dashboard.
+    In addition to the skills and tools picked up from earlier projects such as Git, Docker, HTML, CSS, and Python, we
+    take it a step further in this project and incorporate databases.
+    <br><br>
+
+        <div class = "col col-3">
+
+        <img src="{{ url_for('static', filename='images/musicbanner.jpeg') }}" width = "1300" height = "auto" class="img"
+                             alt="...">
+            </div>
+
+    </div>
 {% endblock %}
 </article>
