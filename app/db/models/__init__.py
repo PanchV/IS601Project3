@@ -6,6 +6,13 @@ from app.db import db
 from flask_login import UserMixin
 from sqlalchemy_serializer import SerializerMixin
 
+
+song_user = db.Table('song_user', db.Model.metadata,
+    db.Column('user_id', db.Integer, db.ForeignKey('users.id')),
+    db.Column('song_id', db.Integer, db.ForeignKey('songs.id'))
+)
+
+
 class Song(db.Model,SerializerMixin):
     __tablename__ = 'songs'
     id = db.Column(db.Integer, primary_key=True)
