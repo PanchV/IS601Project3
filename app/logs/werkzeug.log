@@ -396,3 +396,7 @@
 2022-04-29 17:25:42,741 [INFO] werkzeug: 172.23.0.1 - - [29/Apr/2022 17:25:42] "GET /songs HTTP/1.1" 200 -
 2022-04-29 17:25:46,405 [INFO] werkzeug: 172.23.0.1 - - [29/Apr/2022 17:25:46] "GET /locations HTTP/1.1" 200 -
 2022-04-29 17:25:48,603 [INFO] werkzeug: 172.23.0.1 - - [29/Apr/2022 17:25:48] "GET /locations_datatables/ HTTP/1.1" 200 -
+2022-04-29 17:29:30,597 [INFO] werkzeug:  * Detected change in '/home/myuser/tests/user_add_test.py', reloading
+2022-04-29 18:34:49,942 [INFO] werkzeug: 172.23.0.1 - - [29/Apr/2022 18:34:49] "GET /dashboard HTTP/1.1" 200 -
+2022-04-29 18:34:49,983 [INFO] werkzeug: 172.23.0.1 - - [29/Apr/2022 18:34:49] "[36mGET /static/images/songsdb.png HTTP/1.1[0m" 304 -
+2022-04-29 18:37:09,306 [INFO] werkzeug:  * Detected change in '/home/myuser/tests/csv_upload_test.py', reloading
