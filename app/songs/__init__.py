@@ -46,7 +46,7 @@ def songs_upload():
                      current_user, filepath)
             csv_file = csv.DictReader(file)
             for row in csv_file:
-                list_of_songs.append(Song(row['Name'] ,row['Artist']))
+                list_of_songs.append(Song(row['Name'] ,row['Artist'], row['Genre'], row['Year']))
 
         current_user.songs = list_of_songs # pylint: disable=assigning-non-slot
         db.session.commit()

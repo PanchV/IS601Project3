@@ -1,4 +1,6 @@
 {% extends "base.html" %}
+{% from 'bootstrap5/table.html' import render_table %}
+{% from "bootstrap5/pagination.html" import render_pagination %}
 {% block content %}
     {% from 'bootstrap5/form.html' import render_form, render_field, render_form_row %}
     <div id="row">
@@ -6,6 +8,11 @@
     <p>Welcome: {{ current_user.email }}</p>
     <br>
     To begin using the app, simply navigate to the 'My Account' dropdown menu, and click on, 'Song Mgmt', click on the
-        blue 'Upload Songs' button, and then upload a CSV file of your favorite songs. Afterwards, you should see them below:
+        blue 'Upload Songs' button, and then upload a CSV file of your favorite songs with the following columns: [Name],
+        [Artist], [Genre], [Year]. Afterwards, you should see them below:
+
+
+
+
     </div>
 {% endblock %}
