@@ -1,13 +1,14 @@
 """A simple flask web app"""
 import logging
 import os
-from logging.handlers import RotatingFileHandler
 
 import flask_login
 from flask import Flask, render_template
 from flask_bootstrap import Bootstrap5
+from flask_mail import Mail
 from flask_wtf.csrf import CSRFProtect
 
+from logging.handlers import RotatingFileHandler
 from app.auth import auth
 from app.cli import create_database, create_log_folder
 from app.context_processors import utility_text_processors
@@ -20,8 +21,12 @@ from app.songs import songs
 from app.map import map
 from app.db import database
 from flask_cors import CORS
+
+
+
 login_manager = flask_login.LoginManager()
 
+mail = Mail()
 
 # def page_not_found(e):
 #     return render_template("404.html"), 404
@@ -36,6 +41,7 @@ def create_app():
         app.config.from_object("app.config.DevelopmentConfig")
     elif app.config["ENV"] == "testing":
         app.config.from_object("app.config.TestingConfig")
+    app.mail = Mail(app)
 
     # https://flask-login.readthedocs.io/en/latest/  <-login manager
     login_manager.init_app(app)
