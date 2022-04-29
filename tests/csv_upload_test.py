@@ -22,7 +22,7 @@ def _upload_songs_deny_test(client):
     root = config.Config.BASE_DIR
     filename = 'songs.csv'
     filepath = root + '/../tests/' + filename
-    with open(filepath, 'rb') as file:
+    with open(filepath, '/../tests/') as file:
         data = {
             'file': (file, filename),
         }
